@@ -1,0 +1,4 @@
+0000000000000000000000000000000000000000 bbc94dae6ca84c9ef363f5684e61ae671b0823ad Alexandre Carlos <alexandre.carlos@gmail.com> 1353009083 +0000	branch: Created from origin/EndUserExperience
+bbc94dae6ca84c9ef363f5684e61ae671b0823ad ab1c164917d35507ca828611e434914218791f71 Alexandre Carlos <alexandre.carlos@gmail.com> 1353236903 +0000	commit: ItelliJidea migration
+ab1c164917d35507ca828611e434914218791f71 da45d042d4e54d7493c3fcd49163d1c907fe84b5 Alexandre Carlos <alexandre.carlos@gmail.com> 1353347597 +0000	pull --no-stat -v --progress origin EndUserExperience: Fast-forward
+da45d042d4e54d7493c3fcd49163d1c907fe84b5 1b623cb06204b8aec949bd16e67e15226b5876c5 Alexandre Carlos <alexandre.carlos@gmail.com> 1353365881 +0000	commit: Implementação do Interface Rosario - step 1
