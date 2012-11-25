@@ -36,9 +36,9 @@ public final class MainActivity_
     }
 
     private void afterSetContentView_() {
+        mDiaSemana = ((TextView) findViewById(id.dia_semana));
         mSlindingMenu = ((SlidingMenu) findViewById(id.slidingmenulayout));
         mOracoes = ((View) findViewById(id.oracoes));
-        mDiaSemana = ((TextView) findViewById(id.dia_semana));
         afterCreate();
     }
 

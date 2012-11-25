@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Robotium">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/TestRosario/Robotium" />
+      <root url="file://$PROJECT_DIR$/TestRosario/Robotium" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/TestRosario/Robotium" recursive="false" />
+  </library>
+</component>
