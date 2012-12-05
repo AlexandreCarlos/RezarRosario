@@ -74,10 +74,12 @@ public class ActionBarContextView extends AbsActionBarView implements AnimatorLi
         this(context, attrs, R.attr.actionModeStyle);
     }
 
+    @SuppressWarnings("deprecation")
     public ActionBarContextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.SherlockActionMode, defStyle, 0);
+        //noinspection deprecation
         setBackgroundDrawable(a.getDrawable(
                 R.styleable.SherlockActionMode_background));
         mTitleStyleRes = a.getResourceId(
@@ -103,6 +105,7 @@ public class ActionBarContextView extends AbsActionBarView implements AnimatorLi
         }
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     public void setSplitActionBar(boolean split) {
         if (mSplitActionBar != split) {
@@ -112,6 +115,7 @@ public class ActionBarContextView extends AbsActionBarView implements AnimatorLi
                         LayoutParams.MATCH_PARENT);
                 if (!split) {
                     mMenuView = (ActionMenuView) mActionMenuPresenter.getMenuView(this);
+                    //noinspection deprecation
                     mMenuView.setBackgroundDrawable(null);
                     final ViewGroup oldParent = (ViewGroup) mMenuView.getParent();
                     if (oldParent != null) oldParent.removeView(mMenuView);
@@ -126,6 +130,7 @@ public class ActionBarContextView extends AbsActionBarView implements AnimatorLi
                     layoutParams.width = LayoutParams.MATCH_PARENT;
                     layoutParams.height = mContentHeight;
                     mMenuView = (ActionMenuView) mActionMenuPresenter.getMenuView(this);
+                    //noinspection deprecation
                     mMenuView.setBackgroundDrawable(mSplitBackground);
                     final ViewGroup oldParent = (ViewGroup) mMenuView.getParent();
                     if (oldParent != null) oldParent.removeView(mMenuView);
@@ -200,6 +205,7 @@ public class ActionBarContextView extends AbsActionBarView implements AnimatorLi
         }
     }
 
+    @SuppressWarnings("deprecation")
     public void initForMode(final ActionMode mode) {
         if (mClose == null) {
             LayoutInflater inflater = LayoutInflater.from(mContext);
@@ -228,6 +234,7 @@ public class ActionBarContextView extends AbsActionBarView implements AnimatorLi
         if (!mSplitActionBar) {
             menu.addMenuPresenter(mActionMenuPresenter);
             mMenuView = (ActionMenuView) mActionMenuPresenter.getMenuView(this);
+            //noinspection deprecation
             mMenuView.setBackgroundDrawable(null);
             addView(mMenuView, layoutParams);
         } else {
@@ -241,6 +248,7 @@ public class ActionBarContextView extends AbsActionBarView implements AnimatorLi
             layoutParams.height = mContentHeight;
             menu.addMenuPresenter(mActionMenuPresenter);
             mMenuView = (ActionMenuView) mActionMenuPresenter.getMenuView(this);
+            //noinspection deprecation
             mMenuView.setBackgroundDrawable(mSplitBackground);
             mSplitView.addView(mMenuView, layoutParams);
         }

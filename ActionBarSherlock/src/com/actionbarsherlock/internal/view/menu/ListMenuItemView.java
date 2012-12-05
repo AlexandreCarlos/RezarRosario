@@ -79,10 +79,12 @@ public class ListMenuItemView extends LinearLayout implements MenuView.ItemView 
         this(context, attrs, 0);
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
 
+        //noinspection deprecation
         setBackgroundDrawable(mBackground);
 
         mTitleView = (TextView) findViewById(R.id.abs__title);

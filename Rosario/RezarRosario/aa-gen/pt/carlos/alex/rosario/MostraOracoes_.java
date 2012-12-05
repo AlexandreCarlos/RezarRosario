@@ -33,8 +33,8 @@ public final class MostraOracoes_
     }
 
     private void afterSetContentView_() {
-        mPager = ((ViewPager) findViewById(pt.carlos.alex.rosario.R.id.pager));
         mIndicator = ((ContasRosario) findViewById(pt.carlos.alex.rosario.R.id.indicator));
+        mPager = ((ViewPager) findViewById(pt.carlos.alex.rosario.R.id.pager));
         afterCreate();
     }
 

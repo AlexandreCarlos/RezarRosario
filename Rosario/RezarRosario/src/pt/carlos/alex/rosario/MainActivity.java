@@ -67,7 +67,7 @@ public class MainActivity extends SherlockFragmentActivity implements
 	protected int mIndexDiaSemana = -1;
 	protected int mMisterioSelected = 0;
 	protected int mPaginaActual = 0;
-	private ActionBar ab;
+	protected ActionBar ab;
 
     /**
 	 * Inicialização antes da criação das views. Determina o dia da semana

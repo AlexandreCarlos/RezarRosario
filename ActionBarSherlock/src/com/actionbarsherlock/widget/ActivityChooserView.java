@@ -370,11 +370,13 @@ class ActivityChooserView extends ViewGroup implements ActivityChooserModelClien
      *
      * @return True if dismissed, false if already dismissed.
      */
+    @SuppressWarnings("deprecation")
     public boolean dismissPopup() {
         if (isShowingPopup()) {
             getListPopupWindow().dismiss();
             ViewTreeObserver viewTreeObserver = getViewTreeObserver();
             if (viewTreeObserver.isAlive()) {
+                //noinspection deprecation
                 viewTreeObserver.removeGlobalOnLayoutListener(mOnGlobalLayoutListener);
             }
         }
@@ -400,6 +402,7 @@ class ActivityChooserView extends ViewGroup implements ActivityChooserModelClien
         mIsAttachedToWindow = true;
     }
 
+    @SuppressWarnings("deprecation")
     @Override
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
@@ -413,6 +416,7 @@ class ActivityChooserView extends ViewGroup implements ActivityChooserModelClien
         }
         ViewTreeObserver viewTreeObserver = getViewTreeObserver();
         if (viewTreeObserver.isAlive()) {
+            //noinspection deprecation
             viewTreeObserver.removeGlobalOnLayoutListener(mOnGlobalLayoutListener);
         }
         mIsAttachedToWindow = false;
@@ -501,6 +505,7 @@ class ActivityChooserView extends ViewGroup implements ActivityChooserModelClien
     /**
      * Updates the buttons state.
      */
+    @SuppressWarnings("deprecation")
     private void updateAppearance() {
         // Expand overflow button.
         if (mAdapter.getCount() > 0) {
@@ -527,8 +532,10 @@ class ActivityChooserView extends ViewGroup implements ActivityChooserModelClien
         }
         // Activity chooser content.
         if (mDefaultActivityButton.getVisibility() == VISIBLE) {
+            //noinspection deprecation
             mActivityChooserContent.setBackgroundDrawable(mActivityChooserContentBackground);
         } else {
+            //noinspection deprecation
             mActivityChooserContent.setBackgroundDrawable(null);
             mActivityChooserContent.setPadding(0, 0, 0, 0);
         }
