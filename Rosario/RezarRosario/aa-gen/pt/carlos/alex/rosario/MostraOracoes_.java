@@ -22,13 +22,13 @@ public final class MostraOracoes_
     private View contentView_;
     private Handler handler_ = new Handler();
 
-    private void init_() {
+    private void init_(Bundle savedInstanceState) {
         beforeCreate();
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        init_();
+        init_(savedInstanceState);
         super.onCreate(savedInstanceState);
     }
 
@@ -53,6 +53,10 @@ public final class MostraOracoes_
             return null;
         }
         return contentView_.findViewById(id);
+    }
+
+    public static MostraOracoes_.FragmentBuilder_ builder() {
+        return new MostraOracoes_.FragmentBuilder_();
     }
 
     @Override
@@ -89,6 +93,22 @@ public final class MostraOracoes_
 
         }
         );
+    }
+
+    public static class FragmentBuilder_ {
+
+        private Bundle args_;
+
+        private FragmentBuilder_() {
+            args_ = new Bundle();
+        }
+
+        public MostraOracoes build() {
+            MostraOracoes_ fragment_ = new MostraOracoes_();
+            fragment_.setArguments(args_);
+            return fragment_;
+        }
+
     }
 
 }

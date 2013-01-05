@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="libs_slidingMenu">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/SlidingMenu/libs/android-support-v13.jar!/" />
+      <root url="jar://$PROJECT_DIR$/SlidingMenu/libs/android-support-v13-docs.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

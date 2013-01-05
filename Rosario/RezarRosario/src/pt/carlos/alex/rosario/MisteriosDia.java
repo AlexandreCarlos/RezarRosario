@@ -81,7 +81,7 @@ public class MisteriosDia extends SherlockListFragment {
 	private void setMisteriosList() {
 		setListAdapter(new ArrayAdapter<String>(getActivity(),
 				R.layout.misterio_list_itemlayout, R.id.item_misterio,
-				Misterios.designacaoMisterios(mIndexDiaSemana)));
+				Misterios.obterDesignacaoMisterios(mIndexDiaSemana)));
 	}
 
 	/**

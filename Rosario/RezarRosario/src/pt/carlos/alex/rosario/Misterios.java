@@ -125,7 +125,7 @@ public final class Misterios {
 	 *            4 - 4ª Feira 5 - 5ª Feira 6 - 6ª Feira 7 - Sábado
 	 * @return String Array com os Mistérios associados ao dia da semana
 	 */
-	public static String[] designacaoMisterios(final int pDiaSemana) {
+	public static String[] obterDesignacaoMisterios(final int pDiaSemana) {
 		switch (MISTERIOS[pDiaSemana]) {
 		case 0:
 			return GLORIOSOS;
@@ -151,7 +151,7 @@ public final class Misterios {
 	 *            4 - 4ª Feira 5 - 5ª Feira 6 - 6ª Feira 7 - Sábado
 	 * @return String com a designação do tipo de Mistério do dia da semana
 	 */
-	public static String designacaoMisterio(final int pDiaSemana) {
+	public static String obterTipoMisterio(final int pDiaSemana) {
 		return DESIGN[MISTERIOS[pDiaSemana]];
 	}
 
@@ -164,7 +164,7 @@ public final class Misterios {
      * @return String com a identificação do Mistério selecionado para o dia da
 	 *         semana
 	 */
-	public static String identificarMisterioDia(final int misterio) {
+	public static String obterIdMisterio(final int misterio) {
 
 		if (misterio < 5) {
 			// switch (MISTERIOS[pDiaSemana]) {
@@ -198,8 +198,8 @@ public final class Misterios {
 	 * @return String com o texto bíblico referente ao Mistério selecionado para
 	 *         o dia da semana
 	 */
-	public static String obterMisterioDia(final int pDiaSemana,
-			final int misterio) {
+	public static String obterTextoMisterio(final int pDiaSemana,
+                                            final int misterio) {
 
 		switch (MISTERIOS[pDiaSemana]) {
 		case 0:
@@ -384,12 +384,12 @@ public final class Misterios {
 	 * @return String List com as Orações (Dezena) do Mistério selecionado para
 	 *         o dia da semana
 	 */
-	public static List<String> oracoesDoMisterio(final int pDiaSemana,
-			final int misterio) {
+	public static List<String> obterDezena(final int pDiaSemana,
+                                           final int misterio) {
 		List<String> mOracao = new ArrayList<String>();
 
 		try {
-			mOracao.add(obterMisterioDia(pDiaSemana, misterio));
+			mOracao.add(obterTextoMisterio(pDiaSemana, misterio));
 
 			if (misterio < 5) { // se for Oração Final (misterio = 5) não inclui
 								// as restantes orações

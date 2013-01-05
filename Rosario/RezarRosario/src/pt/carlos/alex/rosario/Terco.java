@@ -34,4 +34,12 @@ public class Terco {
 
     public Terco() {
     }
+
+    public Rosario getRosario() {
+        return rosario;
+    }
+
+    public void setRosario(Rosario rosario) {
+        this.rosario = rosario;
+    }
 }

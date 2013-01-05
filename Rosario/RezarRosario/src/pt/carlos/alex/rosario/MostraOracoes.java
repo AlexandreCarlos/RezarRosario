@@ -171,8 +171,8 @@ public class MostraOracoes extends SherlockFragment {
 						+ startPageViewer.getCount());
 			}
 
-			mOracao = Misterios.oracoesDoMisterio(mIndexDiaSemana,
-					mMisterioSelected);
+			mOracao = Misterios.obterDezena(mIndexDiaSemana,
+                    mMisterioSelected);
 
 			geraPageView();
 
@@ -186,7 +186,7 @@ public class MostraOracoes extends SherlockFragment {
 	// */
 	// private void identificarMisterio() {
 	//
-	// mTextMisterio.setText(Misterios.identificarMisterioDia(mIndexDiaSemana,
+	// mTextMisterio.setText(Misterios.obterIdMisterio(mIndexDiaSemana,
 	// mMisterioSelected));
 	//
 	// }
@@ -287,8 +287,8 @@ public class MostraOracoes extends SherlockFragment {
 			 * escolhido
 			 */
 			mOracao.clear();
-			mOracao.addAll(Misterios.oracoesDoMisterio(mIndexDiaSemana,
-					mMisterioSelected));
+			mOracao.addAll(Misterios.obterDezena(mIndexDiaSemana,
+                    mMisterioSelected));
 
 			if (mPager.getAdapter() != null) {
 				this.mPager.getAdapter().notifyDataSetChanged();

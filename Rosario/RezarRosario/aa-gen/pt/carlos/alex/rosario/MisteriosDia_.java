@@ -16,13 +16,13 @@ public final class MisteriosDia_
 
     private View contentView_;
 
-    private void init_() {
+    private void init_(Bundle savedInstanceState) {
         beforeCreate();
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        init_();
+        init_(savedInstanceState);
         super.onCreate(savedInstanceState);
     }
 
@@ -42,6 +42,26 @@ public final class MisteriosDia_
             return null;
         }
         return contentView_.findViewById(id);
+    }
+
+    public static MisteriosDia_.FragmentBuilder_ builder() {
+        return new MisteriosDia_.FragmentBuilder_();
+    }
+
+    public static class FragmentBuilder_ {
+
+        private Bundle args_;
+
+        private FragmentBuilder_() {
+            args_ = new Bundle();
+        }
+
+        public MisteriosDia build() {
+            MisteriosDia_ fragment_ = new MisteriosDia_();
+            fragment_.setArguments(args_);
+            return fragment_;
+        }
+
     }
 
 }

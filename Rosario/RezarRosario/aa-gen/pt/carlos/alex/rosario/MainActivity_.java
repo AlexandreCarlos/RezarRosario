@@ -5,6 +5,7 @@
 
 package pt.carlos.alex.rosario;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -36,9 +37,9 @@ public final class MainActivity_
     }
 
     private void afterSetContentView_() {
+        mSlindingMenu = ((SlidingMenu) findViewById(id.slidingmenulayout));
         mDiaSemana = ((TextView) findViewById(id.dia_semana));
         mOracoes = ((View) findViewById(id.oracoes));
-        mSlindingMenu = ((SlidingMenu) findViewById(id.slidingmenulayout));
         afterCreate();
     }
 
@@ -100,6 +101,14 @@ public final class MainActivity_
 
         public void start() {
             context_.startActivity(intent_);
+        }
+
+        public void startForResult(int requestCode) {
+            if (context_ instanceof Activity) {
+                ((Activity) context_).startActivityForResult(intent_, requestCode);
+            } else {
+                context_.startActivity(intent_);
+            }
         }
 
     }
