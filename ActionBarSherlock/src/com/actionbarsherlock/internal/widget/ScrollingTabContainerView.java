@@ -271,14 +271,12 @@ public class ScrollingTabContainerView extends NineHorizontalScrollView
         }
     }
 
-    @SuppressWarnings("deprecation")
     private TabView createTabView(ActionBar.Tab tab, boolean forAdapter) {
         //Workaround for not being able to pass a defStyle on pre-3.0
         final TabView tabView = (TabView)mInflater.inflate(R.layout.abs__action_bar_tab, null);
         tabView.init(this, tab, forAdapter);
 
         if (forAdapter) {
-            //noinspection deprecation
             tabView.setBackgroundDrawable(null);
             tabView.setLayoutParams(new ListView.LayoutParams(ListView.LayoutParams.MATCH_PARENT,
                     mContentHeight));

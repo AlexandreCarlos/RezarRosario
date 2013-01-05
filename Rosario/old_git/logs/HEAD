@@ -1,7 +1,0 @@
-0000000000000000000000000000000000000000 b4a3fcc18f3621bc4df506b62f31426d8e8f44c7 Alexandre Carlos <alexandre.carlos@gmail.com> 1353007298 +0000	clone: from git@github.com:AlexandreCarlos/Rosario.git
-b4a3fcc18f3621bc4df506b62f31426d8e8f44c7 bbc94dae6ca84c9ef363f5684e61ae671b0823ad Alexandre Carlos <alexandre.carlos@gmail.com> 1353009083 +0000	checkout: moving from master to EndUserExperience
-bbc94dae6ca84c9ef363f5684e61ae671b0823ad ab1c164917d35507ca828611e434914218791f71 Alexandre Carlos <alexandre.carlos@gmail.com> 1353236903 +0000	commit: ItelliJidea migration
-ab1c164917d35507ca828611e434914218791f71 da45d042d4e54d7493c3fcd49163d1c907fe84b5 Alexandre Carlos <alexandre.carlos@gmail.com> 1353347597 +0000	pull --no-stat -v --progress origin EndUserExperience: Fast-forward
-da45d042d4e54d7493c3fcd49163d1c907fe84b5 1b623cb06204b8aec949bd16e67e15226b5876c5 Alexandre Carlos <alexandre.carlos@gmail.com> 1353365881 +0000	commit: Implementação do Interface Rosario - step 1
-1b623cb06204b8aec949bd16e67e15226b5876c5 b4a3fcc18f3621bc4df506b62f31426d8e8f44c7 Alexandre Carlos <alexandre.carlos@gmail.com> 1353446326 +0000	checkout: moving from EndUserExperience to master
-b4a3fcc18f3621bc4df506b62f31426d8e8f44c7 1b623cb06204b8aec949bd16e67e15226b5876c5 Alexandre Carlos <alexandre.carlos@gmail.com> 1353446455 +0000	checkout: moving from master to EndUserExperience
